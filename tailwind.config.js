@@ -26,7 +26,7 @@ export default {
                     900: '#1E1B4B', // Deep Indigo
                 },
                 // Functional semantic aliases
-                surface: '#000000', // Midnight Future — Absolute Black
+                surface: '#05080f',
                 'surface-highlight': '#0a0f18',
                 justice: {
                     950: '#05080f', // Deep Navy / Surface
@@ -43,7 +43,6 @@ export default {
             },
             borderRadius: {
                 'jeimas': '24px', // Custom curvature
-                'emilia': '2.5rem', // Midnight Future standard
             },
             keyframes: {
                 float: {
