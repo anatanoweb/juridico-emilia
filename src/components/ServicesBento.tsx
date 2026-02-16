@@ -1,5 +1,6 @@
-import { ShieldCheck, Ship, Scale, Gavel, Users, Briefcase } from 'lucide-react';
+import { ShieldCheck, Rocket, Fingerprint, Scale, Gavel, Users, Briefcase } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import { PRACTICE_AREAS, TRUST_BANNER } from '../content/legalServices';
 
 export const ServicesBento = () => {
   const { language } = useLanguage();
@@ -7,20 +8,21 @@ export const ServicesBento = () => {
 
   const data = {
     ES: {
-      aduanasTitle: "Comercio Exterior",
-      aduanasSubtitle: "Asesoría en Comercio Exterior y Exportaciones Retenidas en la Aduana de Chile",
-      aduanasDesc: "Servicio especializado en comercio exterior para la gestión estratégica de exportaciones retenidas por la Aduana de Chile. Asesoría técnica y legal en liberación de carga, gestión de containers, demoras aduaneras y mitigación de riesgos logísticos y financieros.",
-      tributarioTitle: "Defensa Fiscal",
-      tributarioDesc: "Servicio especializado en defensa fiscal frente a fiscalizaciones, sanciones y procedimientos de la autoridad tributaria en Chile. Asesoría técnica y legal para la protección de derechos del contribuyente, reducción de contingencias y resolución estratégica de conflictos fiscales.",
-      tributarioHighlight: "Defensa estratégica ante multas e infracciones del Servicio de Impuestos Internos (SII).",
-      litigacionTitle: "Litigación Integral",
-      litigacionDesc: "Representación experta en tribunales civiles, penales y de familia, respaldada por la trayectoria de nuestros fundadores.",
+      aduanasTitle: PRACTICE_AREAS[0].title,
+      aduanasSubtitle: "Derecho Comercial y Corporativo",
+      aduanasDesc: PRACTICE_AREAS[0].description,
+      tributarioTitle: PRACTICE_AREAS[1].title,
+      tributarioDesc: PRACTICE_AREAS[1].description,
+      tributarioHighlight: PRACTICE_AREAS[2].description,
+      litigacionTitle: PRACTICE_AREAS[3].title,
+      litigacionDesc: PRACTICE_AREAS[3].description,
       litigacionItems: [
-        { name: "Civil", icon: <Scale size={32} /> },
-        { name: "Laboral", icon: <Briefcase size={32} /> },
-        { name: "Penal", icon: <Gavel size={32} /> },
-        { name: "Familia", icon: <Users size={32} /> }
-      ]
+        { name: PRACTICE_AREAS[0].title, icon: <ShieldCheck size={32} /> },
+        { name: PRACTICE_AREAS[1].title, icon: <Rocket size={32} /> },
+        { name: PRACTICE_AREAS[2].title, icon: <Fingerprint size={32} /> },
+        { name: PRACTICE_AREAS[3].title, icon: <Scale size={32} /> }
+      ],
+      trustMessage: TRUST_BANNER.message
     },
     EN: {
       aduanasTitle: "Foreign Trade",
@@ -88,7 +90,7 @@ export const ServicesBento = () => {
           />
         </div>
         <div className="md:w-1/2 flex flex-col justify-center p-12 md:p-32 text-slate-900">
-          <Ship size={40} className="text-amber-500 mb-10 stroke-[1px]" />
+          <ShieldCheck size={40} className="text-amber-500 mb-10 stroke-[1px]" />
           <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 uppercase leading-none italic">
             {content.aduanasTitle}
           </h2>

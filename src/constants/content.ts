@@ -3,16 +3,16 @@ export const servicesContent = {
         title: "Áreas de Especialidad",
         tagline: "Soluciones legales integrales en el centro de Santiago.",
         mainService: {
-            title: "Derecho Aduanero y Comercio Exterior",
-            desc: "Especialistas en la liberación de exportaciones retenidas y containers. Nuestra gestión directa ante la Aduana de Chile asegura la continuidad operativa de su cadena logística frente a contingencias legales complejas."
+            title: "Derecho Comercial y Corporativo",
+            desc: "Nuestra misión es que puedas enfocarte en tu negocio. Asumimos el control de la estructuración legal, contratos y aspectos societarios para garantizar operaciones seguras."
         },
         taxService: {
-            title: "Defensa y Estrategia Tributaria",
-            desc: "Blindamos su patrimonio frente a multas e infracciones del Servicio de Impuestos Internos (SII). Aplicamos un análisis riguroso de la normativa vigente para ofrecer una defensa administrativa y judicial de alta precisión."
+            title: "Ecosistema Startups",
+            desc: "Asesoría integral desde el origen. Abordamos la constitución, pactos, cumplimiento y estructuras legales para preparar tu empresa para la inversión y el crecimiento."
         },
         litigation: {
-            title: "Litigación de Alta Complejidad",
-            desc: "Representación experta en materias Civiles, Laborales, Penales y de Familia. Un enfoque humano respaldado por la solidez técnica de los abogados Juan Carlos Pérez Sudzuki y Rodrigo Medina Carrasco."
+            title: "Propiedad Intelectual y Gobierno Corporativo",
+            desc: "Una marca no es solo un nombre o un logo: es la identidad de tu negocio. Implementamos reglas claras y estándares normativos para tomar decisiones seguras."
         }
     },
     ZH: {
